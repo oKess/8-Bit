@@ -2,17 +2,17 @@
 	<img
 		width="300"
 		alt="8 Bit"
-		src="https://i.imgur.com/fyI0R3d.png">
+		src="https://i.imgur.com/Pyz9Ajm.jpg">
 </h1>
 <h3 align="center">
-	Galacti Bot
+	8 Bit
 </h3>
 
 <p align="center">
 	<strong>
 		<a href="">Site</a>
 		•
-		<a href="">Documentação</a>
+		<a href="">Wiki</a>
 		•
 		<a href="">Beta</a>
 	</strong>
