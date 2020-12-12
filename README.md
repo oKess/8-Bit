@@ -23,9 +23,9 @@
 		src="https://img.shields.io/github/license/oKess/8-Bit?color=purple&style=flat-square"></a>
 	<a href=/"><img
 		alt="npm version"
-		src="https://img.shields.io/npm/v/npm?color=orange&style=flat-square"></a>
+		src="https://img.shields.io/npm/v/npm?color=purple&style=flat-square"></a>
 </p>
 
 ## Features
 
-- **Planetas.** Descrição aqui
+- **Modulos.** Descrição aqui
