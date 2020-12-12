@@ -2,7 +2,7 @@
 	<img
 		width="300"
 		alt="8 Bit"
-		src="https://i.imgur.com/Pyz9Ajm.jpg">
+		src="https://i.imgur.com/m5tNO9f.jpg">
 </h1>
 <h3 align="center">
 	8 Bit
