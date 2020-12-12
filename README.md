@@ -19,8 +19,8 @@
 </p>
 <p align="center">
 	<a href="/"><img
-		alt="#thelounge IRC channel on freenode"
-		src="https://img.shields.io/badge/oKess-%8-Bit-415364.svg?colorA=ff9e18"></a>
+		alt="License"
+		src="https://img.shields.io/github/license/oKess/8-Bit?color=purple&style=flat-square"></a>
 	<a href=/"><img
 		alt="npm version"
 		src="https://img.shields.io/npm/v/npm?color=orange&style=flat-square"></a>
