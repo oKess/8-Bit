@@ -1,5 +1,5 @@
 module.exports = {
     owners: ['422002630106152970'],
-    token: '',
+    token: '.2',
     prefix: '.'
 }
