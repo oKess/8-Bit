@@ -1,11 +1,12 @@
 <h1 align="center">
 	<img
 		width="300"
-		alt="8 Bit"
-		src="https://i.imgur.com/m5tNO9f.jpg">
+		height="300"
+		alt="Ayla"
+		src="resources/images/logo.png">
 </h1>
 <h3 align="center">
-	8 Bit
+	Ayla
 </h3>
 
 <p align="center">
@@ -20,13 +21,13 @@
 <p align="center">
 	<a href="/"><img
 		alt="License"
-		src="https://img.shields.io/github/license/oKess/8-Bit?color=purple&style=flat-square"></a>
+		src="https://img.shields.io/github/license/oKess/Ayla?color=purple&style=flat-square"></a>
 	<a href=/"><img
-		alt="npm version"
-		src="https://img.shields.io/npm/v/npm?color=purple&style=flat-square"></a>
+		alt="last commit"
+		src="https://img.shields.io/github/last-commit/oKess/Ayla?color=purple&logoColor=purple"></a>
 	<a href=/"><img
 		alt="size"
-		src="https://img.shields.io/github/repo-size/oKess/8-Bit?color=purple&style=flat-square"></a>
+		src="https://img.shields.io/github/repo-size/oKess/Ayla?color=purple&style=flat-square"></a>
 </p>
 
 ## Features
