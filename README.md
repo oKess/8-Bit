@@ -3,7 +3,7 @@
 		width="300"
 		height="300"
 		alt="Ayla"
-	     	style="border: 50%"
+	     	style="border-radius: 50%;"
 		src="system/resources/images/logo.png">
 </h1>
 <h3 align="center">
