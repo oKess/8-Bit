@@ -1,10 +1,11 @@
 <h1 align="center">
 	<img
+	     	src="system/resources/images/logo.png"
 		width="300"
 		height="300"
 		alt="Ayla"
 	     	style="border-radius: 50%;"
-		src="system/resources/images/logo.png">
+		>
 </h1>
 <h3 align="center">
 	Ayla
