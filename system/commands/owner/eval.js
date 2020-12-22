@@ -6,7 +6,7 @@ class Command extends BaseCommand {
 		super(client, {
 			name: 'eval',
 			aliases: ['evaluate'],
-			description: 'Verifica a latência do bot'
+			description: 'Executa o código especificado'
 		});
 	}
 
