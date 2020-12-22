@@ -1,7 +1,6 @@
 const { Client } = require('discord.js-light');
 const Discord = require('discord.js-light');
 const fs = require('fs');
-const API = require("./api.js");
 
 module.exports = class MenuClient extends Client {
 
@@ -26,9 +25,6 @@ module.exports = class MenuClient extends Client {
 
         this.validate(options)
         this.loadEvents()
-        this.loadModules()
-        this.loadCommands()
-        API.client = this;
 
     }
 
@@ -43,48 +39,14 @@ module.exports = class MenuClient extends Client {
 
     }
 
-    loadModules() {
-    }
-
     loadEvents() {
-        fs.readdir("./events/", (err, files) => {
+        fs.readdir("./system/events/", (err, files) => {
             if (err) return console.error(err);
             files.forEach(file => {
                 let eventFunction = require(`../events/${file}`);
-                this.on(eventFunction.name, (...args) => eventFunction.execute(API, ...args));
+                this.on(eventFunction.name, (...args) => eventFunction.execute(client, ...args));
             });
         });
-    }
-
-    loadCommands() {
-        const x = new Discord.Collection(undefined, undefined);
-        
-        console.log(' ');
-        
-        const glob = require('glob');
-
-        glob(__dirname+'/../commands/*/*.js', function (er, files) {
-            
-            if(er) {
-            console.log(er)
-            API.sendConsoleError(er.stack)
-            }
-            files.forEach(file=>{
-
-                let Command = require(`${file.replace('.js', '')}`)
-
-                let cmd = new Command();
-                
-                if (!file.includes('!')) x.set(cmd.label, cmd)
-
-                
-            })
-
-        })
-
-        this.commands = x
-
-        console.log(`[COMANDOS] Carregados`.green )
     }
 
     async login(token = this.token) {
