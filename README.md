@@ -1,6 +1,6 @@
 <h1 align="center">
 	<img
-	     	src="system/resources/images/logo.png"
+	     	src="system/resources/images/ayla.png"
 		width="300"
 		height="300"
 		alt="Ayla"
