@@ -1,5 +1,4 @@
 const { Client } = require('discord.js-light');
-const Discord = require('discord.js-light');
 const fs = require('fs');
 
 module.exports = class MenuClient extends Client {
@@ -36,7 +35,6 @@ module.exports = class MenuClient extends Client {
         }
 
         this.token = options.token
-        this.Discord = Discord
 
     }
 

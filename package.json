@@ -18,6 +18,8 @@
   "homepage": "https://github.com/oKess/Ayla#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "discord.js-light": "^3.4.2"
+    "discord.js-light": "^3.4.2",
+    "fs": "0.0.1-security",
+    "glob": "^7.1.6"
   }
 }

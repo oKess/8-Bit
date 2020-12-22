@@ -1,3 +1,4 @@
+const Discord = require('discord.js-light');
 const x = new Discord.Collection(undefined, undefined);
         
 console.log(' ');
@@ -43,7 +44,7 @@ module.exports = {
         const command = client.commands.find(cmd => cmd.label == label || cmd.aliases.includes(label));
 
         if (command) {
-            return command.execute(message, args);
+            return command.execute(client, msg, args);
         }
 
     }
