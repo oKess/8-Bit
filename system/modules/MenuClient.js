@@ -73,17 +73,9 @@ module.exports = class MenuClient extends Client {
 
                 let Command = require(`${file.replace('.js', '')}`)
 
-                command = new Command();
+                let cmd = new Command();
                 
-                if (!file.includes('!')) {
-                
-                x.set(command.label, command)
-                if (command.aliases == undefined) command.aliases = [] 
-                for (const r of command.aliases){
-                    x.set(r, command)
-                }
-                
-                };
+                if (!file.includes('!')) x.set(cmd.label, cmd)
 
                 
             })
