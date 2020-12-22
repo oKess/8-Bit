@@ -71,11 +71,13 @@ module.exports = class MenuClient extends Client {
             }
             files.forEach(file=>{
 
-                let command = require(`${file.replace('.js', '')}`)
+                let Command = require(`${file.replace('.js', '')}`)
+
+                command = new Command();
                 
                 if (!file.includes('!')) {
                 
-                x.set(command.name, command)
+                x.set(command.label, command)
                 if (command.aliases == undefined) command.aliases = [] 
                 for (const r of command.aliases){
                     x.set(r, command)
