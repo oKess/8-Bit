@@ -36,6 +36,7 @@ module.exports = class MenuClient extends Client {
         }
 
         this.token = options.token
+        this.Discord = Discord
 
     }
 
