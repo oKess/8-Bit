@@ -1,6 +1,6 @@
-const Command = require("../../modules/Command");
+const BaseCommand = require("../../modules/Command");
 
-class Local extends Command {
+class Command extends BaseCommand {
 	constructor(client) {
 		super(client, {
 			name: 'ping',
@@ -14,4 +14,4 @@ class Local extends Command {
 	}
 }
 
-module.exports = Local
+module.exports = Command
