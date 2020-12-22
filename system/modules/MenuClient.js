@@ -26,6 +26,7 @@ module.exports = class MenuClient extends Client {
         this.validate(options)
         this.loadCommands()
         this.loadEvents()
+        this.loadModules()
 
     }
 
@@ -72,7 +73,7 @@ module.exports = class MenuClient extends Client {
 
                 let cmd = new Command(this);
                 
-                if (!file.includes('!')) x.set(cmd.name, cmd)
+                if (!file.includes('!')) x.set(cmd.help.name, cmd)
 
                 
             })
@@ -80,6 +81,20 @@ module.exports = class MenuClient extends Client {
         })
         this.commands = x
         console.log(`[COMANDOS] Carregados`.green )
+    }
+
+    loadModules() {
+        console.log(`[MÓDULOS] Carregando...`.green )
+        fs.readdir("./system/modules/load/", (err, files) => {
+            if (err) return console.error(err);
+            files.forEach(file => {
+                let Simple = require(`./load/${file}`);
+                const utils = new Simple(this)
+                this[file.toLowerCase().replace('.js', '')] = utils
+                console.log(`  |- ${file}`.green )
+            });
+            console.log(`[MÓDULOS] Carregados`.green )
+        });
     }
 
     async login(token = this.token) {

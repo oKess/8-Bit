@@ -7,14 +7,13 @@ module.exports = {
 
         if (!msg.content.toLowerCase().startsWith(prefix) || msg.author.bot || msg.channel.type == "dm") return;
 
-        const args = msg.content.slice(prefix.length).split(/ +/);
-
-        const label = args.shift().toLowerCase();
+        const [label, ...args] = msg.content.slice(prefix.length).split(/ +/);
 
         const command = client.commands.find(cmd => cmd.help.name == label || cmd.help.aliases.includes(label));
 
         if (command) {
-            return command.execute(client, msg);
+            console.log(msg.author.id + ' executed ' + label)
+            return command.execute(client, msg, args);
         }
 
     }
