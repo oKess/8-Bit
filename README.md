@@ -21,15 +21,18 @@
 	</strong>
 </p>
 <p align="center">
+	<a href=/"><img
+		alt="last commit"
+		src="https://img.shields.io/github/last-commit/oKess/Ayla?color=purple&logoColor=purple&style=flat-square"></a>
 	<a href="/"><img
 		alt="License"
 		src="https://img.shields.io/github/license/oKess/Ayla?color=purple&style=flat-square"></a>
 	<a href=/"><img
-		alt="last commit"
-		src="https://img.shields.io/github/last-commit/oKess/Ayla?color=purple&logoColor=purple"></a>
-	<a href=/"><img
 		alt="size"
 		src="https://img.shields.io/github/repo-size/oKess/Ayla?color=purple&style=flat-square"></a>
+	<a href=/"><img
+		alt="size"
+		src="https://img.shields.io/github/stars/oKess/Ayla?color=purple&label=%E2%AD%90%20Stars&logoColor=purple&style=flat-square"></a>
 </p>
 
 ## Features
