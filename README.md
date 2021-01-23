@@ -26,7 +26,7 @@
 		src="https://img.shields.io/github/license/oKess/Ayla?color=purple&style=flat-square"></a>
 	<a href=/"><img
 		alt="last commit"
-		src="https://img.shields.io/github/last-commit/oKess/Ayla?color=purple&logoColor=purple"></a>
+		src="https://img.shields.io/github/last-commit/oKess/Ayla?color=purple&logoColor=purple&style=flat-square"></a>
 	<a href=/"><img
 		alt="size"
 		src="https://img.shields.io/github/repo-size/oKess/Ayla?color=purple&style=flat-square"></a>
