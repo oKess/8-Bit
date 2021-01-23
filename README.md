@@ -30,6 +30,9 @@
 	<a href=/"><img
 		alt="size"
 		src="https://img.shields.io/github/repo-size/oKess/Ayla?color=purple&style=flat-square"></a>
+	<a href=/"><img
+		alt="size"
+		src="https://img.shields.io/github/stars/oKess/Ayla?color=purple&label=%E2%AD%90%20Stars&logoColor=purple&style=flat-square"></a>
 </p>
 
 ## Features
