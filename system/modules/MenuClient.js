@@ -1,6 +1,7 @@
 const Discord = require('discord.js-light');
 const Client = Discord.Client
 const fs = require('fs');
+const rl = require('readline')
 
 module.exports = class MenuClient extends Client {
 
@@ -27,6 +28,7 @@ module.exports = class MenuClient extends Client {
         this.loadCommands()
         this.loadEvents()
         this.loadModules()
+        this.loadApp()
 
     }
 
@@ -95,6 +97,47 @@ module.exports = class MenuClient extends Client {
             });
             console.log(`[MÓDULOS] Carregados`.green )
         });
+    }
+
+    loadApp() {
+
+
+        /*var i = rl.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+        
+        i.question(`[?] Você deseja iniciar o App Server do bot? (S/N)\n`.grey , function(response) {
+
+            
+            if (!response.toLowerCase().includes('s')) {
+                
+                console.log(`[APP] Não foi carregado`.red)
+                
+                return
+            
+            }
+            
+            console.log(`[APP] Carregado`.green )
+            
+            i.close();
+            process.stdin.destroy();
+            
+        });
+        
+        response = readline()
+
+        if (!response.toLowerCase().includes('y')) {
+
+            console.log(`[APP] Não foi carregado`.red)
+
+            return
+
+        }*/
+
+
+        console.log(`[APP] Carregado`.green )
+
     }
 
     async login(token = this.token) {

@@ -1,4 +1,3 @@
-
 require("colors")
 
 // Iniciar client
