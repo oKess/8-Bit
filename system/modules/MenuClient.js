@@ -27,8 +27,8 @@ module.exports = class MenuClient extends Client {
         this.validate(options)
         this.loadCommands()
         this.loadEvents()
-        this.loadModules()
         this.loadApp()
+        this.loadModules()
 
     }
 
@@ -95,7 +95,7 @@ module.exports = class MenuClient extends Client {
                 this[file.toLowerCase().replace('.js', '')] = utils
                 console.log(`  |- ${file}`.green )
             });
-            console.log(`[MÓDULOS] Carregados`.green )
+            console.log(`  | Módulos carregados`.green )
         });
     }
 
