@@ -12,7 +12,12 @@ module.exports = {
         const command = client.commands.find(cmd => cmd.help.name == label || cmd.help.aliases.includes(label));
 
         if (command) {
-            console.log(msg.author.id + ' executed ' + label)
+            client.emit('logCmd', { 
+                msg, 
+                cmd: label, 
+                prefix,
+                now: Date.now()
+            })
             return command.execute(client, msg, args);
         }
 
